@@ -1,0 +1,30 @@
+{
+    "name" : "Ragnarok Online Status Simulator",
+    "description" : "Ahng's Status Simulator",
+    "version" : "1.0",
+    "manifest_version" : 2,
+    "permissions" : ["declarativeContent","storage","activeTab"],
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistant" : false
+    },
+    "browser_action" : {
+        "defafult_title" : "Ahng's Status Simulator",
+        "default_popup" : "simulator.html",
+        "default_icon" : "hello_extensions.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+F",
+              "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens hello.html"
+        }
+    },
+    "content_scripts": [ {
+        "matches" : ["http://*/*","https://*/*"],
+        "js" : ["jquery-migrate-1.4.1.js"]
+    } ]
+    
+}

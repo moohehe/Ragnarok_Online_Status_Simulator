@@ -1,0 +1,29 @@
+
+
+// 필요정보
+
+//레벨
+int lv;
+// 잡레벨
+int jlb;
+
+// 스탯
+int str, agi, dex, int, vit, luk;
+int lv_str, lv_agi, lv_dex, lv_int, lv_vit, lv_luk;
+
+
+// 스테이터스 구성
+// 1. 기본스테이터스 1
+// 2. 찍은 스테이터스 +n
+// 3. 잡레벨에 의한 추가보정치
+// 4. 아이템에 의한 추가보정치
+// 5. 스킬에 의한 추가보정치
+// 6. 
+
+
+Map<str, int> status;
+
+
+
+필수 항목 : 공속, 요리, 고캐, 변캐, 후딜
+
